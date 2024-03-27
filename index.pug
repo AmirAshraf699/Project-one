@@ -6,127 +6,129 @@ html(lang="en")
         title Leon
         link(rel="stylesheet", href="./css/normalize.css")
         link(rel="stylesheet", href="./css/all.min.css")
+        link(rel="stylesheet", href="./css/bootstrap.min.css")
         link(rel="stylesheet" href="./css/leon.css")
         link(rel="preconnect", href="https://fonts.googleapis.com")
         link(rel="preconnect", href="https://fonts.gstatic.com"  crossorigin)
         link(href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet")
     body
-        header 
-            .container 
+        header
+            div(class="container d-flex justify-content-between align-items-center")
                 img(src="./images/logo.png", alt="logo")
-                .links
-                    .toggle 
-                        span 
-                        span.two 
-                        span
+                div(class="links position-relative")
+                    div(class="toggle d-flex justify-content-end flex-wrap position-relative") 
+                        span(class="mt-0 mb-1") 
+                        span(class="two mt-0 mb-1") 
+                        span(class="mt-0 mb-1") 
                     nav 
-                        ul 
+                        ul(class="position-absolute bg-white m-0 p-0 d-none") 
                             li: a(href="#features") Features
                             li: a(href="#services") Services
                             li: a(href="#portfolio") Portfolio
                             li: a(href="#about") About
                             li: a(href="#contact") Contact
                         .arrow
-        .landing
-            .text
-                h1 Hello There
+        div(class="landing position-relative d-flex align-items-center justify-content-center flex-column")
+            div(class="text text-center")
+                h1(class="mb-0") Hello There
                 p We are Leon - Super Creative & Minimal Agency Web Template
-        .features#features
-            .feats 
-                .feat 
+        div(class="features" id="features")
+            div(class="feats d-flex align-items-center  justify-content-center flex-wrap") 
+                div(class="feat text-center")
                     i(class="fa-solid fa-wand-magic-sparkles fa-2xs")
-                    h3 Tell Us Your Idea
+                    h3(class="fs-5 fw-bold text-black mt-3") Tell Us Your Idea
                     p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut lab
-                .feat 
+                div(class="feat text-center") 
                     i(class="fa-regular fa-gem fa-2xs")
-                    h3 We Will Do All The Work
+                    h3(class="fs-5 fw-bold text-black mt-3") We Will Do All The Work
                     p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut lab
-                .feat 
+                div(class="feat text-center") 
                     i(class="fa-solid fa-earth-asia fa-xs")
-                    h3 Your Product is World wide
+                    h3(class="fs-5 fw-bold text-black mt-3") Your Product is World wide
                     p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut lab
-        .services#services
+        div(class="services" id="services")
             .container 
                 .heading    
                     h2 Services
                     p Don't be busy, be productive
-                .rows
-                    .serve
-                        .info 
+                div(class="row")
+                    div(class="serve col-md-6 col-lg-6 col-xl-4")
+                        div(class="info d-flex align-items-start")
                             .icon 
                                 i(class="fa-solid fa-palette")
                             .text
                                 h3 Graphic Design
                                 p Graphic design is the process of visual communication and problem-solving using one or more of typography, photography and illustration.
-                        .info 
+                        div(class="info d-flex align-items-start")
                             .icon 
                                 i(class="fa-brands fa-sketch")     
                             .text
                                 h3 UI & UX
                                 p Process of enhancing user satisfaction with a product by improving the usability, accessibility, and pleasure provided in the interaction.
-                    .serve 
-                        .info 
+                    div(class="serve col-md-6 col-lg-6 col-xl-4") 
+                        div(class="info d-flex align-items-start")
                             .icon 
                                 i(class="fa-solid fa-vector-square")
                             .text
                                 h3 Web Design
                                 p Web design encompasses many different skills and disciplines in the production and maintenance of websites.
-                        .info 
+                        div(class="info d-flex align-items-start")
                             .icon 
                                 i(class="fa-solid fa-pen-ruler")
                             .text
                                 h3 Web Development
                                 p Web development is a broad term for the work involved in developing a web site for the Internet or an intranet.
-                    .serve 
+                    div(class="serve col-md-6 col-lg-6 col-xl-4") 
                         .image 
                             img(src="./images/services.jpg", alt="Services")
-        .portfolio#portfolio
+        div(class="portfolio" id="portfolio")
             .container 
                 .heading    
                     h2 Portfolio
                     p If you do it right, it will last forever.
-                .projects 
-                    .project 
+                div(class="projects d-flex align-items-center justify-content-center flex-wrap flex-wrap") 
+                    div(class="project") 
                         img(src="./images/portfolio-1.jpg", alt="")
-                        .text 
-                            h3 Project Here
-                            p My creative ability is very difficult to measure because it can manifest in so many surprising.
-                    .project 
+                        div(class="text") 
+                            h3(class="mt-0 fs-5 fw-bold text-black")  Project Here
+                            p(class="mb-0") My creative ability is very difficult to measure because it can manifest in so many surprising.
+                    div(class="project") 
                         img(src="./images/portfolio-2.jpg", alt="")
-                        .text 
-                            h3 Project Here
-                            p My creative ability is very difficult to measure because it can manifest in so many surprising.
-                    .project 
+                        div(class="text")
+                            h3(class="mt-0 fs-5 fw-bold text-black") Project Here
+                            p(class="mb-0") My creative ability is very difficult to measure because it can manifest in so many surprising.
+                    div(class="project") 
                         img(src="./images/portfolio-3.jpg", alt="")
-                        .text 
-                            h3 Project Here
-                            p My creative ability is very difficult to measure because it can manifest in so many surprising.
-        .about#about 
+                        div(class="text") 
+                            h3(class="mt-0 fs-5 fw-bold text-black") Project Here
+                            p(class="mb-0") My creative ability is very difficult to measure because it can manifest in so many surprising.
+        div(class="about" id="about") 
             .container 
                 .heading    
                     h2 About
                     p Less is more work
-                .content
-                    .image 
+                div(class="content d-flex justify-content-between align-items-center")
+                    div(class="image position-relative") 
                         img(src="./images/about.jpg", alt="About")
                     .text 
-                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil nemo neque voluptate tempora velit cum non, fuga vitae architecto delectus sed maxime rerum impedit aliquam obcaecati, aut excepturi iusto laudantium!
+                        p(class="fw-bold") Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil nemo neque voluptate tempora velit cum non, fuga vitae architecto delectus sed maxime rerum impedit aliquam obcaecati, aut excepturi iusto laudantium!
                         hr
                         p Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, sapiente. Velit iure exercitationem dolores nesciunt dolore. Eum officiis dolorum hic voluptate quaerat minima, similique inventore esse, alias, sed quo officia?
-        .contact#contact 
+        div(class="contact text-center" id="contact") 
             .heading 
                 h2 Contact
                 p We are born to create
             .info 
                 p(class="free") Feel free to drop us a line at:
-                a(href="mailto:leonagency@mail.com?subject=Contact" class="link") leonagency@mail.com
+                a(href="mailto:leonagency@mail.com?subject=Contact" class="link d-block mb-4") leonagency@mail.com
             .social Find Us On Social Networks
                 i(class="fa-brands fa-youtube one")
                 i(class="fa-brands fa-facebook-f two")
                 i(class="fab fa-twitter three")
-        footer 
+        footer(class="text-center text-white") 
             p &copy; 2021 
                 span Leon 
                 | All Right Reserved
+        script(src="./js/bootstrap.bundle.min.js") 
         script(src="./js/main.js") 
 

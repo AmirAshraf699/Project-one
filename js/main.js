@@ -33,5 +33,8 @@ portImage.forEach((img) => {
         button.onclick = () => {
             div.remove()
         }
+        overlay.onclick = () => {
+            div.remove()
+        }
     }
 })
